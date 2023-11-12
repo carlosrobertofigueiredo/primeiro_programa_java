@@ -20,7 +20,7 @@ public class Aluno {
 	private double nota3;
 	private double nota4;
 	
-	/*public Aluno() {
+	public Aluno() {
 	
 	}
 	
@@ -31,17 +31,12 @@ public class Aluno {
 	public Aluno(String nomePadrao, int idadePadrao) {
 		nome = nomePadrao;
 		idade = idadePadrao;
-	} */
+	} 
 	
 	//Veremos os metedos Setters e Getters do objeto
 	//Set é para adicionar ou receber dados para os atributos
 	//Get é para resgatar ou obter o valor do atributo
-	
-	
-	
-	
-	
-	
+				
 	public String getNome() {
 		return nome;
 	}
@@ -132,6 +127,21 @@ public class Aluno {
 		return (nota1 + nota2 + nota3 + nota4) /4;
 		
 	}
-   
+    // Método que retorna true para aprovado e false para reprovado
+	 public boolean getAlunoAprovado() {
+		double media = this.getMediaNota();
+		if (media >= 99) { return true;
+		} else {
+			return false;
+		}
+	}
+	// Método que retorna uma String para aprovado e false para reprovado
+	  public String getAlunoAprovado2() {
+		double media = this.getMediaNota();
+		if (media >= 70) { return "Aluno está Aprovado";
+		} else {
+			return "Aluno está reprovado";
+		}
+	} 
 	
 }

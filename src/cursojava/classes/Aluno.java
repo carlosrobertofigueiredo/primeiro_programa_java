@@ -24,14 +24,14 @@ public class Aluno {
 	
 	}
 	
-	public Aluno(String nomePadrao) {
+	/* public Aluno(String nomePadrao) {
 		nome = nomePadrao;
 	}
 	
 	public Aluno(String nomePadrao, int idadePadrao) {
 		nome = nomePadrao;
 		idade = idadePadrao;
-	} 
+	} */
 	
 	//Veremos os metedos Setters e Getters do objeto
 	//Set é para adicionar ou receber dados para os atributos
